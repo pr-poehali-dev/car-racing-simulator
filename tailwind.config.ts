@@ -61,6 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				garage: {
+					DEFAULT: 'hsl(var(--garage))',
+					dark: 'hsl(var(--garage-dark))',
+					panel: 'hsl(var(--garage-panel))',
+					accent: 'hsl(var(--garage-accent))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +90,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slide-in-right': 'slide-in-right 1s linear infinite'
+			},
+			fontFamily: {
+				racing: ['Rajdhani', 'sans-serif'],
+				sans: ['Roboto', 'sans-serif']
 			}
 		}
 	},
